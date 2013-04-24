@@ -13,21 +13,21 @@
 
 #include "../DBManager/DBManager.h"
 #include "../message.pb.h"
+#include "../Monitor/Handler.h"
 
 namespace Kingslanding {
 namespace OnlineWhiteBoard {
 namespace Server {
 namespace DataProvider {
 
-class DocumentHandler {
+class DocumentHandler : public Kingslanding::OnlineWhiteBoard::Server::Monitor::MsgHandler{
 public:
     DocumentHandler();
     Document GetCurrentDocument(const std::string&);
     DocumentList GetHistorySnapshots(const std::string&);
     Document GetDocument(const std::string&, int);
     virtual ~DocumentHandler();
-private:
-    DBMANAGER::DBManager* db_manager_;
+
 };
 }  // DataProvider
 }  // Server

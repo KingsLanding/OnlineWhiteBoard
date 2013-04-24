@@ -15,13 +15,13 @@
 
 namespace Kingslanding {
 namespace OnlineWhiteBoard {
-namespace server {
+namespace Server {
 namespace Monitor {
 
 class HbHandler : public MsgHandler {
 public:
     HbHandler();
-    HeartReturnPackage GetUserState(HeartBeatSendPackage&);
+    HeartReturnPackage GetUserState(HeartBeatSendPackage& h);
     virtual ~HbHandler();
 };
 }  // Monitor
