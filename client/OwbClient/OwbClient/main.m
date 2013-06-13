@@ -2,8 +2,8 @@
 //  main.m
 //  OwbClient
 //
-//  Created by  tsgsz on 4/7/13.
-//  Copyright (c) 2013 tsgsz. All rights reserved.
+//  Created by Jack on 27/4/13.
+//  Copyright (c) 2013 Jack. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
